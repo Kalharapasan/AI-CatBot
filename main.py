@@ -78,3 +78,22 @@ class SelfLearningAI:
                 f"Let me think about that... Regarding {keywords[0] if keywords else 'your question'}, I'd say it depends on the context. What's your take on it?",
             ]
             return random.choice(responses)
+
+        if keywords:
+            topic = ' and '.join(keywords[:2]) if len(keywords) > 1 else keywords[0]
+            responses = [
+                f"Interesting! I'm noting down information about {topic}. This will help me learn.",
+                f"Thanks for sharing that about {topic}! I'm learning from this conversation.",
+                f"I see you're talking about {topic}. That's useful information!",
+                f"Got it! I've learned something new about {topic}. Tell me more!",
+                f"That's helpful information about {topic}! I'm storing this in my knowledge base.",
+            ]
+        else:
+            responses = [
+                "I understand. Can you elaborate on that?",
+                "Interesting! Tell me more.",
+                "I'm listening. Please continue.",
+                "That's good to know! What else?",
+            ]
+        
+        return random.choice(responses)
