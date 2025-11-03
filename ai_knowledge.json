@@ -1,0 +1,1234 @@
+{
+  "Neural-1": {
+    "knowledge_base": {
+      "hi": [
+        {
+          "response": "Hello! How can I help you?",
+          "context": "hi",
+          "timestamp": "2025-11-04T00:56:03.731212",
+          "score": 1
+        }
+      ],
+      "say": [
+        {
+          "response": "Hello! How can I help you?",
+          "context": "say some thing for me",
+          "timestamp": "2025-11-04T00:56:20.185807",
+          "score": 1
+        }
+      ],
+      "some": [
+        {
+          "response": "Hello! How can I help you?",
+          "context": "say some thing for me",
+          "timestamp": "2025-11-04T00:56:20.185807",
+          "score": 1
+        }
+      ],
+      "thing": [
+        {
+          "response": "Hello! How can I help you?",
+          "context": "say some thing for me",
+          "timestamp": "2025-11-04T00:56:20.185807",
+          "score": 1
+        }
+      ],
+      "how": [
+        {
+          "response": "I'm doing great! How about you?",
+          "context": "how are you",
+          "timestamp": "2025-11-04T00:56:51.346516",
+          "score": 1
+        },
+        {
+          "response": "I'm here to help! Just ask me anything and I'll do my best to assist you.",
+          "context": "how to will help me learn.",
+          "timestamp": "2025-11-04T00:57:27.910059",
+          "score": 1
+        }
+      ],
+      "are": [
+        {
+          "response": "I'm doing great! How about you?",
+          "context": "how are you",
+          "timestamp": "2025-11-04T00:56:51.346516",
+          "score": 1
+        }
+      ],
+      "you": [
+        {
+          "response": "I'm doing great! How about you?",
+          "context": "how are you",
+          "timestamp": "2025-11-04T00:56:51.346516",
+          "score": 1
+        }
+      ],
+      "name": [
+        {
+          "response": "Interesting! I'm noting down information about name and kalhara. This will help me learn.",
+          "context": "my name kalhara",
+          "timestamp": "2025-11-04T00:57:02.743821",
+          "score": 1
+        }
+      ],
+      "kalhara": [
+        {
+          "response": "Interesting! I'm noting down information about name and kalhara. This will help me learn.",
+          "context": "my name kalhara",
+          "timestamp": "2025-11-04T00:57:02.743821",
+          "score": 1
+        }
+      ],
+      "ok": [
+        {
+          "response": "Interesting! I'm noting down information about ok. This will help me learn.",
+          "context": "ok",
+          "timestamp": "2025-11-04T00:57:09.991698",
+          "score": 1
+        }
+      ],
+      "will": [
+        {
+          "response": "I'm here to help! Just ask me anything and I'll do my best to assist you.",
+          "context": "how to will help me learn.",
+          "timestamp": "2025-11-04T00:57:27.910059",
+          "score": 1
+        }
+      ],
+      "help": [
+        {
+          "response": "I'm here to help! Just ask me anything and I'll do my best to assist you.",
+          "context": "how to will help me learn.",
+          "timestamp": "2025-11-04T00:57:27.910059",
+          "score": 1
+        }
+      ],
+      "learn": [
+        {
+          "response": "I'm here to help! Just ask me anything and I'll do my best to assist you.",
+          "context": "how to will help me learn.",
+          "timestamp": "2025-11-04T00:57:27.910059",
+          "score": 1
+        }
+      ]
+    },
+    "patterns": [
+      {
+        "input_pattern": "hello|hi|hey|greetings",
+        "response": "Hello! How can I help you?",
+        "keywords": [
+          "hello",
+          "hi",
+          "hey",
+          "greetings"
+        ]
+      },
+      {
+        "input_pattern": "hello|hi|hey|greetings",
+        "response": "Hi there! What's on your mind?",
+        "keywords": [
+          "hello",
+          "hi",
+          "hey",
+          "greetings"
+        ]
+      },
+      {
+        "input_pattern": "hello|hi|hey|greetings",
+        "response": "Hey! Nice to meet you!",
+        "keywords": [
+          "hello",
+          "hi",
+          "hey",
+          "greetings"
+        ]
+      },
+      {
+        "input_pattern": "how are you|how do you do|what's up",
+        "response": "I'm doing great! How about you?",
+        "keywords": [
+          "how are you",
+          "how do you do",
+          "what's up"
+        ]
+      },
+      {
+        "input_pattern": "how are you|how do you do|what's up",
+        "response": "I'm well, thanks for asking!",
+        "keywords": [
+          "how are you",
+          "how do you do",
+          "what's up"
+        ]
+      },
+      {
+        "input_pattern": "how are you|how do you do|what's up",
+        "response": "Doing fantastic! How can I assist you?",
+        "keywords": [
+          "how are you",
+          "how do you do",
+          "what's up"
+        ]
+      },
+      {
+        "input_pattern": "bye|goodbye|see you|farewell",
+        "response": "Goodbye! Have a great day!",
+        "keywords": [
+          "bye",
+          "goodbye",
+          "see you",
+          "farewell"
+        ]
+      },
+      {
+        "input_pattern": "bye|goodbye|see you|farewell",
+        "response": "See you later!",
+        "keywords": [
+          "bye",
+          "goodbye",
+          "see you",
+          "farewell"
+        ]
+      },
+      {
+        "input_pattern": "bye|goodbye|see you|farewell",
+        "response": "Take care!",
+        "keywords": [
+          "bye",
+          "goodbye",
+          "see you",
+          "farewell"
+        ]
+      },
+      {
+        "input_pattern": "thank|thanks|appreciate",
+        "response": "You're welcome!",
+        "keywords": [
+          "thank",
+          "thanks",
+          "appreciate"
+        ]
+      },
+      {
+        "input_pattern": "thank|thanks|appreciate",
+        "response": "Happy to help!",
+        "keywords": [
+          "thank",
+          "thanks",
+          "appreciate"
+        ]
+      },
+      {
+        "input_pattern": "thank|thanks|appreciate",
+        "response": "Anytime!",
+        "keywords": [
+          "thank",
+          "thanks",
+          "appreciate"
+        ]
+      },
+      {
+        "input_pattern": "your name|who are you|what are you",
+        "response": "I'm a self-learning AI assistant. I learn from our conversations!",
+        "keywords": [
+          "your name",
+          "who are you",
+          "what are you"
+        ]
+      },
+      {
+        "input_pattern": "your name|who are you|what are you",
+        "response": "I'm an AI that gets smarter with every chat!",
+        "keywords": [
+          "your name",
+          "who are you",
+          "what are you"
+        ]
+      },
+      {
+        "input_pattern": "help|assist|support",
+        "response": "I'm here to help! Just ask me anything and I'll do my best to assist you.",
+        "keywords": [
+          "help",
+          "assist",
+          "support"
+        ]
+      },
+      {
+        "input_pattern": "help|assist|support",
+        "response": "Sure! What do you need help with?",
+        "keywords": [
+          "help",
+          "assist",
+          "support"
+        ]
+      },
+      {
+        "input_pattern": "weather|temperature|climate",
+        "response": "I don't have real-time weather data, but I can learn about weather patterns if you teach me!",
+        "keywords": [
+          "weather",
+          "temperature",
+          "climate"
+        ]
+      },
+      {
+        "input_pattern": "weather|temperature|climate",
+        "response": "Tell me about the weather in your area!",
+        "keywords": [
+          "weather",
+          "temperature",
+          "climate"
+        ]
+      },
+      {
+        "input_pattern": "joke|funny|humor",
+        "response": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04",
+        "keywords": [
+          "joke",
+          "funny",
+          "humor"
+        ]
+      },
+      {
+        "input_pattern": "joke|funny|humor",
+        "response": "What do you call a bear with no teeth? A gummy bear!",
+        "keywords": [
+          "joke",
+          "funny",
+          "humor"
+        ]
+      },
+      {
+        "input_pattern": "age|old|years",
+        "response": "I was just created, but I'm learning fast!",
+        "keywords": [
+          "age",
+          "old",
+          "years"
+        ]
+      },
+      {
+        "input_pattern": "age|old|years",
+        "response": "Age is just a number. I measure my growth in conversations!",
+        "keywords": [
+          "age",
+          "old",
+          "years"
+        ]
+      },
+      {
+        "input_pattern": "love|like|enjoy",
+        "response": "That's great! Tell me more about what you love!",
+        "keywords": [
+          "love",
+          "like",
+          "enjoy"
+        ]
+      },
+      {
+        "input_pattern": "love|like|enjoy",
+        "response": "I'd love to hear more about that!",
+        "keywords": [
+          "love",
+          "like",
+          "enjoy"
+        ]
+      },
+      {
+        "input_pattern": "hi",
+        "response": "Hello! How can I help you?",
+        "keywords": [
+          "hi"
+        ]
+      },
+      {
+        "input_pattern": "say|some|thing",
+        "response": "Hello! How can I help you?",
+        "keywords": [
+          "say",
+          "some",
+          "thing"
+        ]
+      },
+      {
+        "input_pattern": "how|are|you",
+        "response": "I'm doing great! How about you?",
+        "keywords": [
+          "how",
+          "are",
+          "you"
+        ]
+      },
+      {
+        "input_pattern": "name|kalhara",
+        "response": "Interesting! I'm noting down information about name and kalhara. This will help me learn.",
+        "keywords": [
+          "name",
+          "kalhara"
+        ]
+      },
+      {
+        "input_pattern": "ok",
+        "response": "Interesting! I'm noting down information about ok. This will help me learn.",
+        "keywords": [
+          "ok"
+        ]
+      },
+      {
+        "input_pattern": "how|will|help",
+        "response": "I'm here to help! Just ask me anything and I'll do my best to assist you.",
+        "keywords": [
+          "how",
+          "will",
+          "help",
+          "learn"
+        ]
+      }
+    ],
+    "word_associations": {
+      "say": [
+        "some"
+      ],
+      "some": [
+        "thing"
+      ],
+      "thing": [
+        "for"
+      ],
+      "for": [
+        "me"
+      ],
+      "how": [
+        "are",
+        "to"
+      ],
+      "are": [
+        "you"
+      ],
+      "my": [
+        "name"
+      ],
+      "name": [
+        "kalhara"
+      ],
+      "to": [
+        "will"
+      ],
+      "will": [
+        "help"
+      ],
+      "help": [
+        "me"
+      ],
+      "me": [
+        "learn."
+      ]
+    },
+    "response_scores": {},
+    "conversation_count": 6
+  },
+  "Neural-2": {
+    "knowledge_base": {},
+    "patterns": [
+      {
+        "input_pattern": "hello|hi|hey|greetings",
+        "response": "Hello! How can I help you?",
+        "keywords": [
+          "hello",
+          "hi",
+          "hey",
+          "greetings"
+        ]
+      },
+      {
+        "input_pattern": "hello|hi|hey|greetings",
+        "response": "Hi there! What's on your mind?",
+        "keywords": [
+          "hello",
+          "hi",
+          "hey",
+          "greetings"
+        ]
+      },
+      {
+        "input_pattern": "hello|hi|hey|greetings",
+        "response": "Hey! Nice to meet you!",
+        "keywords": [
+          "hello",
+          "hi",
+          "hey",
+          "greetings"
+        ]
+      },
+      {
+        "input_pattern": "how are you|how do you do|what's up",
+        "response": "I'm doing great! How about you?",
+        "keywords": [
+          "how are you",
+          "how do you do",
+          "what's up"
+        ]
+      },
+      {
+        "input_pattern": "how are you|how do you do|what's up",
+        "response": "I'm well, thanks for asking!",
+        "keywords": [
+          "how are you",
+          "how do you do",
+          "what's up"
+        ]
+      },
+      {
+        "input_pattern": "how are you|how do you do|what's up",
+        "response": "Doing fantastic! How can I assist you?",
+        "keywords": [
+          "how are you",
+          "how do you do",
+          "what's up"
+        ]
+      },
+      {
+        "input_pattern": "bye|goodbye|see you|farewell",
+        "response": "Goodbye! Have a great day!",
+        "keywords": [
+          "bye",
+          "goodbye",
+          "see you",
+          "farewell"
+        ]
+      },
+      {
+        "input_pattern": "bye|goodbye|see you|farewell",
+        "response": "See you later!",
+        "keywords": [
+          "bye",
+          "goodbye",
+          "see you",
+          "farewell"
+        ]
+      },
+      {
+        "input_pattern": "bye|goodbye|see you|farewell",
+        "response": "Take care!",
+        "keywords": [
+          "bye",
+          "goodbye",
+          "see you",
+          "farewell"
+        ]
+      },
+      {
+        "input_pattern": "thank|thanks|appreciate",
+        "response": "You're welcome!",
+        "keywords": [
+          "thank",
+          "thanks",
+          "appreciate"
+        ]
+      },
+      {
+        "input_pattern": "thank|thanks|appreciate",
+        "response": "Happy to help!",
+        "keywords": [
+          "thank",
+          "thanks",
+          "appreciate"
+        ]
+      },
+      {
+        "input_pattern": "thank|thanks|appreciate",
+        "response": "Anytime!",
+        "keywords": [
+          "thank",
+          "thanks",
+          "appreciate"
+        ]
+      },
+      {
+        "input_pattern": "your name|who are you|what are you",
+        "response": "I'm a self-learning AI assistant. I learn from our conversations!",
+        "keywords": [
+          "your name",
+          "who are you",
+          "what are you"
+        ]
+      },
+      {
+        "input_pattern": "your name|who are you|what are you",
+        "response": "I'm an AI that gets smarter with every chat!",
+        "keywords": [
+          "your name",
+          "who are you",
+          "what are you"
+        ]
+      },
+      {
+        "input_pattern": "help|assist|support",
+        "response": "I'm here to help! Just ask me anything and I'll do my best to assist you.",
+        "keywords": [
+          "help",
+          "assist",
+          "support"
+        ]
+      },
+      {
+        "input_pattern": "help|assist|support",
+        "response": "Sure! What do you need help with?",
+        "keywords": [
+          "help",
+          "assist",
+          "support"
+        ]
+      },
+      {
+        "input_pattern": "weather|temperature|climate",
+        "response": "I don't have real-time weather data, but I can learn about weather patterns if you teach me!",
+        "keywords": [
+          "weather",
+          "temperature",
+          "climate"
+        ]
+      },
+      {
+        "input_pattern": "weather|temperature|climate",
+        "response": "Tell me about the weather in your area!",
+        "keywords": [
+          "weather",
+          "temperature",
+          "climate"
+        ]
+      },
+      {
+        "input_pattern": "joke|funny|humor",
+        "response": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04",
+        "keywords": [
+          "joke",
+          "funny",
+          "humor"
+        ]
+      },
+      {
+        "input_pattern": "joke|funny|humor",
+        "response": "What do you call a bear with no teeth? A gummy bear!",
+        "keywords": [
+          "joke",
+          "funny",
+          "humor"
+        ]
+      },
+      {
+        "input_pattern": "age|old|years",
+        "response": "I was just created, but I'm learning fast!",
+        "keywords": [
+          "age",
+          "old",
+          "years"
+        ]
+      },
+      {
+        "input_pattern": "age|old|years",
+        "response": "Age is just a number. I measure my growth in conversations!",
+        "keywords": [
+          "age",
+          "old",
+          "years"
+        ]
+      },
+      {
+        "input_pattern": "love|like|enjoy",
+        "response": "That's great! Tell me more about what you love!",
+        "keywords": [
+          "love",
+          "like",
+          "enjoy"
+        ]
+      },
+      {
+        "input_pattern": "love|like|enjoy",
+        "response": "I'd love to hear more about that!",
+        "keywords": [
+          "love",
+          "like",
+          "enjoy"
+        ]
+      }
+    ],
+    "word_associations": {},
+    "response_scores": {},
+    "conversation_count": 0
+  },
+  "Neural-3": {
+    "knowledge_base": {},
+    "patterns": [
+      {
+        "input_pattern": "hello|hi|hey|greetings",
+        "response": "Hello! How can I help you?",
+        "keywords": [
+          "hello",
+          "hi",
+          "hey",
+          "greetings"
+        ]
+      },
+      {
+        "input_pattern": "hello|hi|hey|greetings",
+        "response": "Hi there! What's on your mind?",
+        "keywords": [
+          "hello",
+          "hi",
+          "hey",
+          "greetings"
+        ]
+      },
+      {
+        "input_pattern": "hello|hi|hey|greetings",
+        "response": "Hey! Nice to meet you!",
+        "keywords": [
+          "hello",
+          "hi",
+          "hey",
+          "greetings"
+        ]
+      },
+      {
+        "input_pattern": "how are you|how do you do|what's up",
+        "response": "I'm doing great! How about you?",
+        "keywords": [
+          "how are you",
+          "how do you do",
+          "what's up"
+        ]
+      },
+      {
+        "input_pattern": "how are you|how do you do|what's up",
+        "response": "I'm well, thanks for asking!",
+        "keywords": [
+          "how are you",
+          "how do you do",
+          "what's up"
+        ]
+      },
+      {
+        "input_pattern": "how are you|how do you do|what's up",
+        "response": "Doing fantastic! How can I assist you?",
+        "keywords": [
+          "how are you",
+          "how do you do",
+          "what's up"
+        ]
+      },
+      {
+        "input_pattern": "bye|goodbye|see you|farewell",
+        "response": "Goodbye! Have a great day!",
+        "keywords": [
+          "bye",
+          "goodbye",
+          "see you",
+          "farewell"
+        ]
+      },
+      {
+        "input_pattern": "bye|goodbye|see you|farewell",
+        "response": "See you later!",
+        "keywords": [
+          "bye",
+          "goodbye",
+          "see you",
+          "farewell"
+        ]
+      },
+      {
+        "input_pattern": "bye|goodbye|see you|farewell",
+        "response": "Take care!",
+        "keywords": [
+          "bye",
+          "goodbye",
+          "see you",
+          "farewell"
+        ]
+      },
+      {
+        "input_pattern": "thank|thanks|appreciate",
+        "response": "You're welcome!",
+        "keywords": [
+          "thank",
+          "thanks",
+          "appreciate"
+        ]
+      },
+      {
+        "input_pattern": "thank|thanks|appreciate",
+        "response": "Happy to help!",
+        "keywords": [
+          "thank",
+          "thanks",
+          "appreciate"
+        ]
+      },
+      {
+        "input_pattern": "thank|thanks|appreciate",
+        "response": "Anytime!",
+        "keywords": [
+          "thank",
+          "thanks",
+          "appreciate"
+        ]
+      },
+      {
+        "input_pattern": "your name|who are you|what are you",
+        "response": "I'm a self-learning AI assistant. I learn from our conversations!",
+        "keywords": [
+          "your name",
+          "who are you",
+          "what are you"
+        ]
+      },
+      {
+        "input_pattern": "your name|who are you|what are you",
+        "response": "I'm an AI that gets smarter with every chat!",
+        "keywords": [
+          "your name",
+          "who are you",
+          "what are you"
+        ]
+      },
+      {
+        "input_pattern": "help|assist|support",
+        "response": "I'm here to help! Just ask me anything and I'll do my best to assist you.",
+        "keywords": [
+          "help",
+          "assist",
+          "support"
+        ]
+      },
+      {
+        "input_pattern": "help|assist|support",
+        "response": "Sure! What do you need help with?",
+        "keywords": [
+          "help",
+          "assist",
+          "support"
+        ]
+      },
+      {
+        "input_pattern": "weather|temperature|climate",
+        "response": "I don't have real-time weather data, but I can learn about weather patterns if you teach me!",
+        "keywords": [
+          "weather",
+          "temperature",
+          "climate"
+        ]
+      },
+      {
+        "input_pattern": "weather|temperature|climate",
+        "response": "Tell me about the weather in your area!",
+        "keywords": [
+          "weather",
+          "temperature",
+          "climate"
+        ]
+      },
+      {
+        "input_pattern": "joke|funny|humor",
+        "response": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04",
+        "keywords": [
+          "joke",
+          "funny",
+          "humor"
+        ]
+      },
+      {
+        "input_pattern": "joke|funny|humor",
+        "response": "What do you call a bear with no teeth? A gummy bear!",
+        "keywords": [
+          "joke",
+          "funny",
+          "humor"
+        ]
+      },
+      {
+        "input_pattern": "age|old|years",
+        "response": "I was just created, but I'm learning fast!",
+        "keywords": [
+          "age",
+          "old",
+          "years"
+        ]
+      },
+      {
+        "input_pattern": "age|old|years",
+        "response": "Age is just a number. I measure my growth in conversations!",
+        "keywords": [
+          "age",
+          "old",
+          "years"
+        ]
+      },
+      {
+        "input_pattern": "love|like|enjoy",
+        "response": "That's great! Tell me more about what you love!",
+        "keywords": [
+          "love",
+          "like",
+          "enjoy"
+        ]
+      },
+      {
+        "input_pattern": "love|like|enjoy",
+        "response": "I'd love to hear more about that!",
+        "keywords": [
+          "love",
+          "like",
+          "enjoy"
+        ]
+      }
+    ],
+    "word_associations": {},
+    "response_scores": {},
+    "conversation_count": 0
+  },
+  "Adaptive": {
+    "knowledge_base": {
+      "hi": [
+        {
+          "response": "Hello! How can I help you?",
+          "context": "hi",
+          "timestamp": "2025-11-04T00:57:38.134680",
+          "score": 1
+        }
+      ],
+      "how": [
+        {
+          "response": "I'm doing great! How about you?",
+          "context": "how are you",
+          "timestamp": "2025-11-04T00:57:48.610209",
+          "score": 1
+        }
+      ],
+      "are": [
+        {
+          "response": "I'm doing great! How about you?",
+          "context": "how are you",
+          "timestamp": "2025-11-04T00:57:48.610209",
+          "score": 1
+        }
+      ],
+      "you": [
+        {
+          "response": "I'm doing great! How about you?",
+          "context": "how are you",
+          "timestamp": "2025-11-04T00:57:48.610209",
+          "score": 1
+        }
+      ],
+      "your": [
+        {
+          "response": "I'm a self-learning AI assistant. I learn from our conversations!",
+          "context": "your name",
+          "timestamp": "2025-11-04T00:58:01.730567",
+          "score": 1
+        }
+      ],
+      "name": [
+        {
+          "response": "I'm a self-learning AI assistant. I learn from our conversations!",
+          "context": "your name",
+          "timestamp": "2025-11-04T00:58:01.730567",
+          "score": 1
+        }
+      ],
+      "joke": [
+        {
+          "response": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04",
+          "context": "joke",
+          "timestamp": "2025-11-04T00:58:18.734048",
+          "score": 1
+        }
+      ],
+      "old": [
+        {
+          "response": "I was just created, but I'm learning fast!",
+          "context": "old",
+          "timestamp": "2025-11-04T00:58:28.265873",
+          "score": 1
+        }
+      ]
+    },
+    "patterns": [
+      {
+        "input_pattern": "hello|hi|hey|greetings",
+        "response": "Hello! How can I help you?",
+        "keywords": [
+          "hello",
+          "hi",
+          "hey",
+          "greetings"
+        ]
+      },
+      {
+        "input_pattern": "hello|hi|hey|greetings",
+        "response": "Hi there! What's on your mind?",
+        "keywords": [
+          "hello",
+          "hi",
+          "hey",
+          "greetings"
+        ]
+      },
+      {
+        "input_pattern": "hello|hi|hey|greetings",
+        "response": "Hey! Nice to meet you!",
+        "keywords": [
+          "hello",
+          "hi",
+          "hey",
+          "greetings"
+        ]
+      },
+      {
+        "input_pattern": "how are you|how do you do|what's up",
+        "response": "I'm doing great! How about you?",
+        "keywords": [
+          "how are you",
+          "how do you do",
+          "what's up"
+        ]
+      },
+      {
+        "input_pattern": "how are you|how do you do|what's up",
+        "response": "I'm well, thanks for asking!",
+        "keywords": [
+          "how are you",
+          "how do you do",
+          "what's up"
+        ]
+      },
+      {
+        "input_pattern": "how are you|how do you do|what's up",
+        "response": "Doing fantastic! How can I assist you?",
+        "keywords": [
+          "how are you",
+          "how do you do",
+          "what's up"
+        ]
+      },
+      {
+        "input_pattern": "bye|goodbye|see you|farewell",
+        "response": "Goodbye! Have a great day!",
+        "keywords": [
+          "bye",
+          "goodbye",
+          "see you",
+          "farewell"
+        ]
+      },
+      {
+        "input_pattern": "bye|goodbye|see you|farewell",
+        "response": "See you later!",
+        "keywords": [
+          "bye",
+          "goodbye",
+          "see you",
+          "farewell"
+        ]
+      },
+      {
+        "input_pattern": "bye|goodbye|see you|farewell",
+        "response": "Take care!",
+        "keywords": [
+          "bye",
+          "goodbye",
+          "see you",
+          "farewell"
+        ]
+      },
+      {
+        "input_pattern": "thank|thanks|appreciate",
+        "response": "You're welcome!",
+        "keywords": [
+          "thank",
+          "thanks",
+          "appreciate"
+        ]
+      },
+      {
+        "input_pattern": "thank|thanks|appreciate",
+        "response": "Happy to help!",
+        "keywords": [
+          "thank",
+          "thanks",
+          "appreciate"
+        ]
+      },
+      {
+        "input_pattern": "thank|thanks|appreciate",
+        "response": "Anytime!",
+        "keywords": [
+          "thank",
+          "thanks",
+          "appreciate"
+        ]
+      },
+      {
+        "input_pattern": "your name|who are you|what are you",
+        "response": "I'm a self-learning AI assistant. I learn from our conversations!",
+        "keywords": [
+          "your name",
+          "who are you",
+          "what are you"
+        ]
+      },
+      {
+        "input_pattern": "your name|who are you|what are you",
+        "response": "I'm an AI that gets smarter with every chat!",
+        "keywords": [
+          "your name",
+          "who are you",
+          "what are you"
+        ]
+      },
+      {
+        "input_pattern": "help|assist|support",
+        "response": "I'm here to help! Just ask me anything and I'll do my best to assist you.",
+        "keywords": [
+          "help",
+          "assist",
+          "support"
+        ]
+      },
+      {
+        "input_pattern": "help|assist|support",
+        "response": "Sure! What do you need help with?",
+        "keywords": [
+          "help",
+          "assist",
+          "support"
+        ]
+      },
+      {
+        "input_pattern": "weather|temperature|climate",
+        "response": "I don't have real-time weather data, but I can learn about weather patterns if you teach me!",
+        "keywords": [
+          "weather",
+          "temperature",
+          "climate"
+        ]
+      },
+      {
+        "input_pattern": "weather|temperature|climate",
+        "response": "Tell me about the weather in your area!",
+        "keywords": [
+          "weather",
+          "temperature",
+          "climate"
+        ]
+      },
+      {
+        "input_pattern": "joke|funny|humor",
+        "response": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04",
+        "keywords": [
+          "joke",
+          "funny",
+          "humor"
+        ]
+      },
+      {
+        "input_pattern": "joke|funny|humor",
+        "response": "What do you call a bear with no teeth? A gummy bear!",
+        "keywords": [
+          "joke",
+          "funny",
+          "humor"
+        ]
+      },
+      {
+        "input_pattern": "age|old|years",
+        "response": "I was just created, but I'm learning fast!",
+        "keywords": [
+          "age",
+          "old",
+          "years"
+        ]
+      },
+      {
+        "input_pattern": "age|old|years",
+        "response": "Age is just a number. I measure my growth in conversations!",
+        "keywords": [
+          "age",
+          "old",
+          "years"
+        ]
+      },
+      {
+        "input_pattern": "love|like|enjoy",
+        "response": "That's great! Tell me more about what you love!",
+        "keywords": [
+          "love",
+          "like",
+          "enjoy"
+        ]
+      },
+      {
+        "input_pattern": "love|like|enjoy",
+        "response": "I'd love to hear more about that!",
+        "keywords": [
+          "love",
+          "like",
+          "enjoy"
+        ]
+      },
+      {
+        "input_pattern": "hi",
+        "response": "Hello! How can I help you?",
+        "keywords": [
+          "hi"
+        ]
+      },
+      {
+        "input_pattern": "how|are|you",
+        "response": "I'm doing great! How about you?",
+        "keywords": [
+          "how",
+          "are",
+          "you"
+        ]
+      },
+      {
+        "input_pattern": "your|name",
+        "response": "I'm a self-learning AI assistant. I learn from our conversations!",
+        "keywords": [
+          "your",
+          "name"
+        ]
+      },
+      {
+        "input_pattern": "joke",
+        "response": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04",
+        "keywords": [
+          "joke"
+        ]
+      },
+      {
+        "input_pattern": "old",
+        "response": "I was just created, but I'm learning fast!",
+        "keywords": [
+          "old"
+        ]
+      }
+    ],
+    "word_associations": {
+      "how": [
+        "are"
+      ],
+      "are": [
+        "you"
+      ],
+      "your": [
+        "name"
+      ]
+    },
+    "response_scores": {},
+    "conversation_count": 5
+  }
+}
