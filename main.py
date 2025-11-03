@@ -68,3 +68,5 @@ class SelfLearningAI:
                         return best_response['response']
         
         return self.generate_smart_response(user_input, keywords, context)
+    
+    def generate_smart_response(self, user_input, keywords, context):
