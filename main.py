@@ -60,10 +60,9 @@ class SelfLearningAI:
         keywords = self.extract_keywords(user_input)
         
         if keywords:
-            for keyword in keywords[:3]:  # Check top 3 keywords
+            for keyword in keywords[:3]: 
                 if keyword in self.knowledge_base and self.knowledge_base[keyword]:
                     responses = self.knowledge_base[keyword]
-                    # Get highest scored response
                     best_response = max(responses, key=lambda x: x.get('score', 0))
                     if best_response['score'] > 0:
                         return best_response['response']
