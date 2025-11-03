@@ -155,3 +155,5 @@ class ChatBot(tk.Tk):
         self.conversation_context = []
         self.last_user_message = None
         self.last_bot_response = None
+        
+        self.load_knowledge()
