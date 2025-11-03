@@ -229,3 +229,17 @@ class ChatBot(tk.Tk):
         
         self.add_system_message("🤖 Self-Learning AI Chatbot Ready!")
         self.add_system_message("I learn from every conversation. Just start chatting!")
+    
+    def add_message(self, sender, message):
+        self.chat_display.config(state=tk.NORMAL)
+        timestamp = datetime.now().strftime("%H:%M:%S")
+        
+        if sender == 'user':
+            self.chat_display.insert(tk.END, f"[{timestamp}] You: ", 'user')
+            self.chat_display.insert(tk.END, f"{message}\n\n")
+        elif sender == 'bot':
+            self.chat_display.insert(tk.END, f"[{timestamp}] AI: ", 'bot')
+            self.chat_display.insert(tk.END, f"{message}\n\n")
+        
+        self.chat_display.config(state=tk.DISABLED)
+        self.chat_display.see(tk.END)
