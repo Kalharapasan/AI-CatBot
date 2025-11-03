@@ -273,4 +273,32 @@ class ChatBot(tk.Tk):
         if event:
             return 'break'
     
-    
+    def get_ai_response(self, user_message):
+        try:
+            model = self.models[self.current_model]
+            response = model.generate_response(user_message, self.conversation_context[-5:])
+            self.add_message('bot', response)
+            self.last_bot_response = response
+            self.chat_history.append({
+                'role': 'user', 
+                'content': user_message, 
+                'timestamp': datetime.now().isoformat()
+            })
+            self.chat_history.append({
+                'role': 'assistant', 
+                'content': response, 
+                'timestamp': datetime.now().isoformat()
+            })
+            
+            self.conversation_context.append(user_message)
+            self.conversation_context.append(response)
+            model.learn_from_conversation(user_message, response)
+            stats = model.get_stats()
+            self.add_learning_message(
+                f"✓ Learned! Knowledge: {stats['keywords_learned']} concepts | "
+                f"{stats['total_patterns']} patterns | {stats['conversations']} chats"
+            )
+            
+        except Exception as e:
+            self.add_system_message(f"Error: {str(e)}")
+            print(f"Error in get_ai_response: {e}")
