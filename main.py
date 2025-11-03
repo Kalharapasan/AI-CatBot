@@ -411,3 +411,7 @@ class ChatBot(tk.Tk):
                         model.conversation_count = model_data.get('conversation_count', 0)
             except Exception as e:
                 print(f"Error loading knowledge: {e}")
+    
+    def auto_save_knowledge(self):
+        self.save_knowledge()
+        self.after(60000, self.auto_save_knowledge)
