@@ -390,3 +390,24 @@ class ChatBot(tk.Tk):
                 json.dump(data, f, indent=2)
         except Exception as e:
             print(f"Error saving knowledge: {e}")
+    
+    def load_knowledge(self):
+        if os.path.exists('ai_knowledge.json'):
+            try:
+                with open('ai_knowledge.json', 'r') as f:
+                    data = json.load(f)
+                
+                for model_name, model_data in data.items():
+                    if model_name in self.models:
+                        model = self.models[model_name]
+                        model.knowledge_base = defaultdict(list, 
+                            model_data.get('knowledge_base', {}))
+                        model.patterns.extend(model_data.get('patterns', []))
+                        model.word_associations = defaultdict(set, {
+                            k: set(v) for k, v in model_data.get('word_associations', {}).items()
+                        })
+                        model.response_scores = defaultdict(int, 
+                            model_data.get('response_scores', {}))
+                        model.conversation_count = model_data.get('conversation_count', 0)
+            except Exception as e:
+                print(f"Error loading knowledge: {e}")
