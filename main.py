@@ -39,3 +39,9 @@ class SelfLearningAI:
                     'response': response,
                     'keywords': pattern.split('|')
                 })
+    def extract_keywords(self, text):
+        stop_words = {'the', 'is', 'at', 'which', 'on', 'a', 'an', 'and', 'or', 'but', 
+                     'in', 'with', 'to', 'for', 'of', 'as', 'by', 'this', 'that', 'it'}
+        words = re.findall(r'\w+', text.lower())
+        keywords = [w for w in words if w not in stop_words and len(w) > 2]
+        return keywords if keywords else words
