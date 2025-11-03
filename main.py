@@ -263,3 +263,12 @@ class ChatBot(tk.Tk):
                 return
             
         message = self.input_field.get("1.0", tk.END).strip()
+        
+        if message:
+            self.add_message('user', message)
+            self.last_user_message = message
+            self.input_field.delete("1.0", tk.END)
+            self.get_ai_response(message)
+        
+        if event:
+            return 'break'
