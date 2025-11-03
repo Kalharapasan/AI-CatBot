@@ -324,3 +324,34 @@ class ChatBot(tk.Tk):
             f"Switched to {self.current_model} | "
             f"Knowledge: {stats['keywords_learned']} concepts, {stats['conversations']} conversations"
         )
+    
+    def show_stats(self):
+        stats_window = tk.Toplevel(self)
+        stats_window.title("AI Learning Statistics")
+        stats_window.geometry("600x450")
+        stats_window.configure(bg='#1e1e1e')
+        
+        tk.Label(stats_window, text="🧠 AI Learning Statistics", bg='#1e1e1e', fg='white', 
+                font=('Arial', 16, 'bold')).pack(pady=15)
+        
+        stats_text = scrolledtext.ScrolledText(stats_window, wrap=tk.WORD, 
+                                               bg='#2d2d2d', fg='white', 
+                                               font=('Consolas', 10))
+        stats_text.pack(fill=tk.BOTH, expand=True, padx=20, pady=10)
+        
+        for model_name, model in self.models.items():
+            stats = model.get_stats()
+            stats_text.insert(tk.END, f"\n{'='*60}\n")
+            stats_text.insert(tk.END, f"  MODEL: {model_name}\n")
+            stats_text.insert(tk.END, f"{'='*60}\n\n")
+            stats_text.insert(tk.END, f"  📚 Learned Concepts:      {stats['keywords_learned']}\n")
+            stats_text.insert(tk.END, f"  🧩 Response Patterns:     {stats['total_patterns']}\n")
+            stats_text.insert(tk.END, f"  🔗 Word Associations:     {stats['associations']}\n")
+            stats_text.insert(tk.END, f"  💡 Total Knowledge Items: {stats['total_knowledge']}\n")
+            stats_text.insert(tk.END, f"  💬 Conversations:         {stats['conversations']}\n\n")
+        
+        stats_text.config(state=tk.DISABLED)
+        
+        tk.Button(stats_window, text="Close", command=stats_window.destroy,
+                 bg='#f44336', fg='white', font=('Arial', 10, 'bold'),
+                 relief=tk.FLAT, padx=20, pady=8).pack(pady=10)
