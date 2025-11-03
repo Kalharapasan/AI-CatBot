@@ -120,3 +120,9 @@ class SelfLearningAI:
         for i, word in enumerate(words):
             if i < len(words) - 1:
                 self.word_associations[word].add(words[i + 1])
+                
+        self.patterns.append({
+                'input_pattern': '|'.join(keywords[:3]) if keywords else user_input.lower(),
+                'response': bot_response,
+                'keywords': keywords
+            })
