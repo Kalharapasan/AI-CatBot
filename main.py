@@ -255,3 +255,11 @@ class ChatBot(tk.Tk):
         self.chat_display.insert(tk.END, f"[LEARNING] {message}\n\n", 'learn')
         self.chat_display.config(state=tk.DISABLED)
         self.chat_display.see(tk.END)
+    
+    def send_message(self, event=None):
+        """Send user message"""
+        if event and event.keysym == 'Return':
+            if event.state & 0x1:
+                return
+            
+        message = self.input_field.get("1.0", tk.END).strip()
