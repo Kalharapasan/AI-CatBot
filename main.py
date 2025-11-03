@@ -226,3 +226,6 @@ class ChatBot(tk.Tk):
         tk.Button(btn_frame, text="Send", command=self.send_message, 
                  bg='#2196F3', fg='white', font=('Arial', 9, 'bold'), 
                  relief=tk.FLAT, width=5, pady=5).pack(side=tk.TOP, pady=2)
+        
+        self.add_system_message("🤖 Self-Learning AI Chatbot Ready!")
+        self.add_system_message("I learn from every conversation. Just start chatting!")
