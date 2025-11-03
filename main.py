@@ -143,3 +143,15 @@ class ChatBot(tk.Tk):
         self.title("Self-Learning AI Chatbot")
         self.geometry("1000x700")
         self.configure(bg='#1e1e1e')
+        
+        self.models = {
+            'Neural-1': SelfLearningAI('Neural-1'),
+            'Neural-2': SelfLearningAI('Neural-2'),
+            'Neural-3': SelfLearningAI('Neural-3'),
+            'Adaptive': SelfLearningAI('Adaptive')
+        }
+        self.current_model = 'Neural-1'
+        self.chat_history = []
+        self.conversation_context = []
+        self.last_user_message = None
+        self.last_bot_response = None
