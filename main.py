@@ -67,3 +67,5 @@ class SelfLearningAI:
                     best_response = max(responses, key=lambda x: x.get('score', 0))
                     if best_response['score'] > 0:
                         return best_response['response']
+        
+        return self.generate_smart_response(user_input, keywords, context)
