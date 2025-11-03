@@ -172,3 +172,6 @@ class ChatBot(tk.Tk):
                                  values=list(self.models.keys()), state='readonly', width=15)
         model_menu.pack(side=tk.LEFT, padx=5)
         model_menu.bind('<<ComboboxSelected>>', self.change_model)
+        self.learning_label = tk.Label(control_frame, text="● Learning: ON", 
+                                       bg='#2d2d2d', fg='#4CAF50', font=('Arial', 9, 'bold'))
+        self.learning_label.pack(side=tk.LEFT, padx=10)
