@@ -415,3 +415,7 @@ class ChatBot(tk.Tk):
     def auto_save_knowledge(self):
         self.save_knowledge()
         self.after(60000, self.auto_save_knowledge)
+    
+if __name__ == "__main__":
+    app = ChatBot()
+    app.mainloop()
