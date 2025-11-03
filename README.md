@@ -37,25 +37,26 @@ These steps help you create an isolated environment and run the project locally.
 python -m venv .venv
 ```
 
-2. Activate the virtual environment (PowerShell):
+1. Activate the virtual environment (PowerShell):
 
 ```powershell
 .\.venv\Scripts\Activate.ps1
 ```
 
-3. If you have a `requirements.txt`, install dependencies:
+1. If you have a `requirements.txt`, install dependencies:
 
 ```powershell
 pip install -r requirements.txt
 ```
 
-4. Run the bot:
+1. Run the bot:
 
 ```powershell
 python main.py
 ```
 
 Notes:
+
 - There is no `requirements.txt` in this repository by default. Add one if your project needs external packages.
 - For Windows Command Prompt use `\.venv\Scripts\activate.bat` instead of the PowerShell command above.
 
@@ -81,16 +82,17 @@ Bot: I don't have live weather data. I can answer questions that are in my local
 
 ```json
 [
-	{
-		"id": "greeting",
-		"trigger": ["hello", "hi", "hey"],
-		"response": "Hello! I'm AI-CatBot — ask me anything about this project.",
-		"metadata": { "lang": "en", "source": "builtin" }
-	}
+  {
+    "id": "greeting",
+    "trigger": ["hello", "hi", "hey"],
+    "response": "Hello! I'm AI-CatBot — ask me anything about this project.",
+    "metadata": { "lang": "en", "source": "builtin" }
+  }
 ]
 ```
 
 Recommended fields:
+
 - `id` — unique string identifier for the entry.
 - `trigger` — array of phrases or keywords that match user input.
 - `response` — text the bot should return when the trigger matches.
