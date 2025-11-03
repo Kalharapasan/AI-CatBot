@@ -316,3 +316,11 @@ class ChatBot(tk.Tk):
             self.save_knowledge()
         else:
             self.add_system_message("No recent message to rate")
+            
+    def change_model(self, event=None):
+        self.current_model = self.model_var.get()
+        stats = self.models[self.current_model].get_stats()
+        self.add_system_message(
+            f"Switched to {self.current_model} | "
+            f"Knowledge: {stats['keywords_learned']} concepts, {stats['conversations']} conversations"
+        )
