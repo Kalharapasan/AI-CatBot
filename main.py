@@ -70,3 +70,11 @@ class SelfLearningAI:
         return self.generate_smart_response(user_input, keywords, context)
     
     def generate_smart_response(self, user_input, keywords, context):
+        
+        if '?' in user_input:
+            responses = [
+                f"That's an interesting question! Based on what I know, {keywords[0] if keywords else 'this topic'} is quite fascinating. What specifically would you like to know?",
+                f"Good question! I'm learning about {keywords[0] if keywords else 'this'}. Can you tell me more details?",
+                f"Let me think about that... Regarding {keywords[0] if keywords else 'your question'}, I'd say it depends on the context. What's your take on it?",
+            ]
+            return random.choice(responses)
