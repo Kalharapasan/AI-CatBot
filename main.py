@@ -211,3 +211,18 @@ class ChatBot(tk.Tk):
         self.input_field.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=(5, 0), pady=5)
         self.input_field.bind('<Return>', self.send_message)
         self.input_field.focus()
+        
+        btn_frame = tk.Frame(input_frame, bg='#2d2d2d')
+        btn_frame.pack(side=tk.RIGHT, padx=5)
+        
+        tk.Button(btn_frame, text="👍", command=lambda: self.give_feedback('positive'), 
+                 bg='#4CAF50', fg='white', font=('Arial', 12, 'bold'), 
+                 relief=tk.FLAT, width=3).pack(side=tk.TOP, pady=2)
+        
+        tk.Button(btn_frame, text="👎", command=lambda: self.give_feedback('negative'), 
+                 bg='#f44336', fg='white', font=('Arial', 12, 'bold'), 
+                 relief=tk.FLAT, width=3).pack(side=tk.TOP, pady=2)
+        
+        tk.Button(btn_frame, text="Send", command=self.send_message, 
+                 bg='#2196F3', fg='white', font=('Arial', 9, 'bold'), 
+                 relief=tk.FLAT, width=5, pady=5).pack(side=tk.TOP, pady=2)
