@@ -114,3 +114,9 @@ class SelfLearningAI:
                 'timestamp': datetime.now().isoformat(),
                 'score': score
             })
+        
+        
+        words = user_input.lower().split()
+        for i, word in enumerate(words):
+            if i < len(words) - 1:
+                self.word_associations[word].add(words[i + 1])
