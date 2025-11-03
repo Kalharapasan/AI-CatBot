@@ -49,3 +49,10 @@ class SelfLearningAI:
     def generate_response(self, user_input, context=[]):
         self.conversation_count += 1
         user_input_lower = user_input.lower()
+        
+        for pattern_data in self.patterns:
+            pattern = pattern_data['input_pattern']
+            pattern_parts = pattern.split('|')
+            
+            if any(part in user_input_lower for part in pattern_parts):
+                return random.choice([pattern_data['response']]) if isinstance(pattern_data['response'], str) else pattern_data['response']
