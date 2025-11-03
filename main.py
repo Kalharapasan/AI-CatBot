@@ -196,3 +196,8 @@ class ChatBot(tk.Tk):
                                                      relief=tk.FLAT, padx=10, pady=10)
         self.chat_display.pack(fill=tk.BOTH, expand=True)
         self.chat_display.config(state=tk.DISABLED)
+        
+        self.chat_display.tag_config('user', foreground='#4CAF50', font=('Consolas', 10, 'bold'))
+        self.chat_display.tag_config('bot', foreground='#2196F3', font=('Consolas', 10, 'bold'))
+        self.chat_display.tag_config('system', foreground='#FF9800', font=('Consolas', 9, 'italic'))
+        self.chat_display.tag_config('learn', foreground='#9C27B0', font=('Consolas', 9, 'italic'))
