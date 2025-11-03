@@ -186,3 +186,13 @@ class ChatBot(tk.Tk):
         tk.Button(control_frame, text="💾 Save", command=self.save_chat, 
                  bg='#9C27B0', fg='white', font=('Arial', 9, 'bold'), 
                  relief=tk.FLAT, padx=8).pack(side=tk.LEFT, padx=3)
+        
+        chat_frame = tk.Frame(main_frame, bg='#2d2d2d', relief=tk.SUNKEN, bd=2)
+        chat_frame.pack(fill=tk.BOTH, expand=True, pady=(0, 10))
+        
+        self.chat_display = scrolledtext.ScrolledText(chat_frame, wrap=tk.WORD, 
+                                                     bg='#1e1e1e', fg='#ffffff', 
+                                                     font=('Consolas', 10), 
+                                                     relief=tk.FLAT, padx=10, pady=10)
+        self.chat_display.pack(fill=tk.BOTH, expand=True)
+        self.chat_display.config(state=tk.DISABLED)
