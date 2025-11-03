@@ -43,12 +43,6 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 
-1. If you have a `requirements.txt`, install dependencies:
-
-```powershell
-pip install -r requirements.txt
-```
-
 1. Run the bot:
 
 ```powershell
