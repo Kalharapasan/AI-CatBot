@@ -249,3 +249,9 @@ class ChatBot(tk.Tk):
         self.chat_display.insert(tk.END, f"[SYSTEM] {message}\n\n", 'system')
         self.chat_display.config(state=tk.DISABLED)
         self.chat_display.see(tk.END)
+    
+    def add_learning_message(self, message):
+        self.chat_display.config(state=tk.NORMAL)
+        self.chat_display.insert(tk.END, f"[LEARNING] {message}\n\n", 'learn')
+        self.chat_display.config(state=tk.DISABLED)
+        self.chat_display.see(tk.END)
