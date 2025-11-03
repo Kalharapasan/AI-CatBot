@@ -355,3 +355,12 @@ class ChatBot(tk.Tk):
         tk.Button(stats_window, text="Close", command=stats_window.destroy,
                  bg='#f44336', fg='white', font=('Arial', 10, 'bold'),
                  relief=tk.FLAT, padx=20, pady=8).pack(pady=10)
+    
+    def new_chat(self):
+        if messagebox.askyesno("New Chat", "Start new chat? Current conversation will be cleared."):
+            self.chat_display.config(state=tk.NORMAL)
+            self.chat_display.delete("1.0", tk.END)
+            self.chat_display.config(state=tk.DISABLED)
+            self.chat_history = []
+            self.conversation_context = []
+            self.add_system_message("✨ New chat started! I still remember everything I learned.")
