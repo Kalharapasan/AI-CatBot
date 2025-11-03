@@ -157,3 +157,4 @@ class ChatBot(tk.Tk):
         self.last_bot_response = None
         
         self.load_knowledge()
+        self.create_widgets()
