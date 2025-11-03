@@ -7,3 +7,4 @@ import random
 import re
 from collections import defaultdict
 
+class SelfLearningAI:
