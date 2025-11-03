@@ -97,3 +97,6 @@ class SelfLearningAI:
             ]
         
         return random.choice(responses)
+    
+    def learn_from_conversation(self, user_input, bot_response, user_feedback=None):
+        
