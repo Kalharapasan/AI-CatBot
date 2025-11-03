@@ -302,3 +302,17 @@ class ChatBot(tk.Tk):
         except Exception as e:
             self.add_system_message(f"Error: {str(e)}")
             print(f"Error in get_ai_response: {e}")
+    
+    def give_feedback(self, feedback_type):
+        if self.last_user_message and self.last_bot_response:
+            model = self.models[self.current_model]
+            model.learn_from_conversation(self.last_user_message, self.last_bot_response, feedback_type)
+            
+            if feedback_type == 'positive':
+                self.add_learning_message("👍 Great! I'll remember this response works well!")
+            else:
+                self.add_learning_message("👎 Noted! I'll try to improve next time!")
+            
+            self.save_knowledge()
+        else:
+            self.add_system_message("No recent message to rate")
