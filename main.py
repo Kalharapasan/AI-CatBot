@@ -163,3 +163,5 @@ class ChatBot(tk.Tk):
     def create_widgets(self):
         main_frame = tk.Frame(self, bg='#1e1e1e')
         main_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
+        control_frame = tk.Frame(main_frame, bg='#2d2d2d', relief=tk.RAISED, bd=2)
+        control_frame.pack(fill=tk.X, pady=(0, 10))
