@@ -135,3 +135,11 @@ class SelfLearningAI:
             'total_knowledge': sum(len(v) for v in self.knowledge_base.values()),
             'conversations': self.conversation_count
         }
+        
+class ChatBot(tk.Tk):
+    def __init__(self):
+        super().__init__()
+        
+        self.title("Self-Learning AI Chatbot")
+        self.geometry("1000x700")
+        self.configure(bg='#1e1e1e')
