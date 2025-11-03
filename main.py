@@ -45,3 +45,7 @@ class SelfLearningAI:
         words = re.findall(r'\w+', text.lower())
         keywords = [w for w in words if w not in stop_words and len(w) > 2]
         return keywords if keywords else words
+    
+    def generate_response(self, user_input, context=[]):
+        self.conversation_count += 1
+        user_input_lower = user_input.lower()
