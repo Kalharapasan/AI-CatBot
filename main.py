@@ -373,3 +373,20 @@ class ChatBot(tk.Tk):
             self.add_system_message(f"💾 Chat saved to {filename}")
         else:
             messagebox.showinfo("Save Chat", "No chat history to save")
+    
+    def save_knowledge(self):
+        try:
+            data = {}
+            for model_name, model in self.models.items():
+                data[model_name] = {
+                    'knowledge_base': {k: list(v) for k, v in model.knowledge_base.items()},
+                    'patterns': model.patterns,
+                    'word_associations': {k: list(v) for k, v in model.word_associations.items()},
+                    'response_scores': dict(model.response_scores),
+                    'conversation_count': model.conversation_count
+                }
+            
+            with open('ai_knowledge.json', 'w') as f:
+                json.dump(data, f, indent=2)
+        except Exception as e:
+            print(f"Error saving knowledge: {e}")
