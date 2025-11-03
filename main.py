@@ -364,3 +364,12 @@ class ChatBot(tk.Tk):
             self.chat_history = []
             self.conversation_context = []
             self.add_system_message("✨ New chat started! I still remember everything I learned.")
+    
+    def save_chat(self):
+        if self.chat_history:
+            filename = f"chat_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+            with open(filename, 'w') as f:
+                json.dump(self.chat_history, f, indent=2)
+            self.add_system_message(f"💾 Chat saved to {filename}")
+        else:
+            messagebox.showinfo("Save Chat", "No chat history to save")
