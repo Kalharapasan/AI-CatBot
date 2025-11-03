@@ -56,3 +56,5 @@ class SelfLearningAI:
             
             if any(part in user_input_lower for part in pattern_parts):
                 return random.choice([pattern_data['response']]) if isinstance(pattern_data['response'], str) else pattern_data['response']
+        
+        keywords = self.extract_keywords(user_input)
