@@ -201,3 +201,13 @@ class ChatBot(tk.Tk):
         self.chat_display.tag_config('bot', foreground='#2196F3', font=('Consolas', 10, 'bold'))
         self.chat_display.tag_config('system', foreground='#FF9800', font=('Consolas', 9, 'italic'))
         self.chat_display.tag_config('learn', foreground='#9C27B0', font=('Consolas', 9, 'italic'))
+        
+        input_frame = tk.Frame(main_frame, bg='#2d2d2d', relief=tk.RAISED, bd=2)
+        input_frame.pack(fill=tk.X)
+        
+        self.input_field = tk.Text(input_frame, height=3, wrap=tk.WORD, 
+                                   bg='#1e1e1e', fg='white', 
+                                   font=('Arial', 11), relief=tk.FLAT, padx=10, pady=10)
+        self.input_field.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=(5, 0), pady=5)
+        self.input_field.bind('<Return>', self.send_message)
+        self.input_field.focus()
