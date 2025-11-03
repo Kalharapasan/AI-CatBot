@@ -158,3 +158,4 @@ class ChatBot(tk.Tk):
         
         self.load_knowledge()
         self.create_widgets()
+        self.after(60000, self.auto_save_knowledge)
