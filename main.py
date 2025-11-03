@@ -126,3 +126,12 @@ class SelfLearningAI:
                 'response': bot_response,
                 'keywords': keywords
             })
+    
+    def get_stats(self):
+        return {
+            'total_patterns': len(self.patterns),
+            'keywords_learned': len(self.knowledge_base),
+            'associations': sum(len(v) for v in self.word_associations.values()),
+            'total_knowledge': sum(len(v) for v in self.knowledge_base.values()),
+            'conversations': self.conversation_count
+        }
