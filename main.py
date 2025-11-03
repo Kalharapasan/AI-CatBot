@@ -165,3 +165,10 @@ class ChatBot(tk.Tk):
         main_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
         control_frame = tk.Frame(main_frame, bg='#2d2d2d', relief=tk.RAISED, bd=2)
         control_frame.pack(fill=tk.X, pady=(0, 10))
+        tk.Label(control_frame, text="AI Brain:", bg='#2d2d2d', fg='white', 
+                font=('Arial', 10, 'bold')).pack(side=tk.LEFT, padx=5, pady=5)
+        self.model_var = tk.StringVar(value=self.current_model)
+        model_menu = ttk.Combobox(control_frame, textvariable=self.model_var, 
+                                 values=list(self.models.keys()), state='readonly', width=15)
+        model_menu.pack(side=tk.LEFT, padx=5)
+        model_menu.bind('<<ComboboxSelected>>', self.change_model)
