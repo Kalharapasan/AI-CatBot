@@ -99,4 +99,18 @@ class SelfLearningAI:
         return random.choice(responses)
     
     def learn_from_conversation(self, user_input, bot_response, user_feedback=None):
+        keywords = self.extract_keywords(user_input)
         
+        score = 1
+        if user_feedback == 'positive':
+            score = 3
+        elif user_feedback == 'negative':
+            score = -1
+        
+        for keyword in keywords[:5]:  
+            self.knowledge_base[keyword].append({
+                'response': bot_response,
+                'context': user_input,
+                'timestamp': datetime.now().isoformat(),
+                'score': score
+            })
