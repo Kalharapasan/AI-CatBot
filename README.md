@@ -27,6 +27,77 @@ python main.py
 
 1. Follow any prompts printed by `main.py`.
 
+## Setup & development
+
+These steps help you create an isolated environment and run the project locally.
+
+1. Create a virtual environment (recommended):
+
+```powershell
+python -m venv .venv
+```
+
+2. Activate the virtual environment (PowerShell):
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+3. If you have a `requirements.txt`, install dependencies:
+
+```powershell
+pip install -r requirements.txt
+```
+
+4. Run the bot:
+
+```powershell
+python main.py
+```
+
+Notes:
+- There is no `requirements.txt` in this repository by default. Add one if your project needs external packages.
+- For Windows Command Prompt use `\.venv\Scripts\activate.bat` instead of the PowerShell command above.
+
+## Example conversation
+
+Here is a simple example showing how the bot might interact on the command line. Exact prompts depend on `main.py`'s implementation.
+
+User: Hello
+
+Bot: Hi — I'm AI-CatBot. How can I help you today?
+
+User: Tell me something about yourself.
+
+Bot: I'm a small experimental chatbot that uses a local knowledge file (`ai_knowledge.json`) to answer simple questions.
+
+User: What's the weather like?
+
+Bot: I don't have live weather data. I can answer questions that are in my local knowledge base or help with general information.
+
+## `ai_knowledge.json` schema and example
+
+`ai_knowledge.json` stores local knowledge used by the bot. A minimal example entry could look like this:
+
+```json
+[
+	{
+		"id": "greeting",
+		"trigger": ["hello", "hi", "hey"],
+		"response": "Hello! I'm AI-CatBot — ask me anything about this project.",
+		"metadata": { "lang": "en", "source": "builtin" }
+	}
+]
+```
+
+Recommended fields:
+- `id` — unique string identifier for the entry.
+- `trigger` — array of phrases or keywords that match user input.
+- `response` — text the bot should return when the trigger matches.
+- `metadata` — optional object for language, tags, or provenance.
+
+To add knowledge, edit `ai_knowledge.json` and add new entries following the example. How entries are matched and used depends on the code in `main.py`.
+
 ## Project structure
 
 - `main.py` — program entry point.
