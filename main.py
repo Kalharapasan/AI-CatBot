@@ -175,3 +175,14 @@ class ChatBot(tk.Tk):
         self.learning_label = tk.Label(control_frame, text="● Learning: ON", 
                                        bg='#2d2d2d', fg='#4CAF50', font=('Arial', 9, 'bold'))
         self.learning_label.pack(side=tk.LEFT, padx=10)
+        tk.Button(control_frame, text="📊 Stats", command=self.show_stats, 
+                 bg='#4CAF50', fg='white', font=('Arial', 9, 'bold'), 
+                 relief=tk.FLAT, padx=8).pack(side=tk.LEFT, padx=3)
+        
+        tk.Button(control_frame, text="🆕 New", command=self.new_chat, 
+                 bg='#FF9800', fg='white', font=('Arial', 9, 'bold'), 
+                 relief=tk.FLAT, padx=8).pack(side=tk.LEFT, padx=3)
+        
+        tk.Button(control_frame, text="💾 Save", command=self.save_chat, 
+                 bg='#9C27B0', fg='white', font=('Arial', 9, 'bold'), 
+                 relief=tk.FLAT, padx=8).pack(side=tk.LEFT, padx=3)
